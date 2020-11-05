@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageDetails"
+        android:layout_width="374dp"
+        android:layout_height="344dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtNameDetails"
+        android:layout_width="113dp"
+        android:layout_height="37dp"
+        android:text="TextView"
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtPriceDetails"
+        tools:layout_editor_absoluteX="28dp" />
+
+    <TextView
+        android:id="@+id/txtPriceDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:text="TextView"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toEndOf="@+id/txtNameDetails"
+        app:layout_constraintTop_toBottomOf="@+id/imageDetails" />
+
+    <TextView
+        android:id="@+id/txtSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="21dp"
+        android:text="TextView"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameDetails" />
+
+    <Button
+        android:id="@+id/btnSizeX"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="23dp"
+        android:text="X"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSize" />
+
+    <Button
+        android:id="@+id/btnSizeL"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:text="L"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSizeXL"
+        tools:layout_editor_absoluteX="107dp" />
+
+    <Button
+        android:id="@+id/btnSizeXL"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="139dp"
+        android:text="XL"
+        app:layout_constraintStart_toEndOf="@+id/btnSizeL"
+        app:layout_constraintTop_toBottomOf="@+id/imageDetails" />
+
+    <Button
+        android:id="@+id/btnSizeS"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:text="S"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSizeXL"
+        app:layout_constraintTop_toBottomOf="@+id/txtPriceDetails" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="186dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Add to bag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSizeL"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
