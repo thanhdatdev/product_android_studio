@@ -3,6 +3,7 @@ package com.example.recycleviewexample;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,7 +19,15 @@ public class ProductDetails extends AppCompatActivity {
         int position = intent.getIntExtra("i", 0);
         ProductEntity product = (ProductEntity) intent.getSerializableExtra("obj");
         ((TextView)findViewById(R.id.txtNameDetails)).setText(product.getName());
+        ((TextView)findViewById(R.id.txtSize)).setText("Size");
         ((TextView)findViewById(R.id.txtPriceDetails)).setText(String.valueOf(product.getPrice()));
         ((ImageView)findViewById(R.id.imageDetails)).setImageResource(product.getImage());
+
+        findViewById(R.id.btnAdd).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }

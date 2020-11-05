@@ -23,10 +23,13 @@
         android:id="@+id/txtNameDetails"
         android:layout_width="113dp"
         android:layout_height="37dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="24dp"
         android:text="TextView"
         android:textSize="25sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtPriceDetails"
-        tools:layout_editor_absoluteX="28dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageDetails" />
 
     <TextView
         android:id="@+id/txtPriceDetails"
@@ -51,8 +54,11 @@
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
         android:layout_marginTop="21dp"
+        android:layout_marginEnd="281dp"
+        android:layout_marginRight="281dp"
         android:text="TextView"
         android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNameDetails" />
 
@@ -71,9 +77,12 @@
         android:id="@+id/btnSizeL"
         android:layout_width="56dp"
         android:layout_height="51dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="23dp"
         android:text="L"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnSizeXL"
-        tools:layout_editor_absoluteX="107dp" />
+        app:layout_constraintStart_toEndOf="@+id/btnSizeX"
+        app:layout_constraintTop_toBottomOf="@+id/txtSize" />
 
     <Button
         android:id="@+id/btnSizeXL"
